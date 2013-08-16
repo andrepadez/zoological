@@ -1,0 +1,14 @@
+<h3>Proprietário</h3>
+<div class="control">
+	<label for="proprietario">Já existente:</label>
+	<select id="proprietario" ng-model="location.proprietario._id" ng-options="user._id as user.nome for user in users['Proprietário']">
+		<option value="0">Seleccionar</option>
+	</select>
+	<!--<a href="http://localhost:8080/users" class="ink-button fancybox fancybox.ajax">Novo</a>-->
+</div>
+
+<script type="text/javascript">
+	/*$(function(){
+		$(".fancybox").fancybox();
+	});*/
+</script>

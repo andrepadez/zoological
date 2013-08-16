@@ -1,0 +1,17 @@
+body {
+	background: #000;
+	overflow: hidden;
+	height: {{h}};
+}
+
+body > div {
+	-webkit-transition: all 0.1s ease-in-out;
+			transition: all 0.1s ease-in-out;
+}
+
+a:link, 
+a:hover,
+a:visited,
+a:active {
+	text-decoration: none;
+}

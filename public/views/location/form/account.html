@@ -1,0 +1,22 @@
+<h3>Account</h3>
+<div id="tipo-account">
+	<div class="control">
+		<label for="tipo_spotter">Location Spotter</label>
+		<input type="radio" name="tipo_account" value= "Location Spotter" id="tipo_spotter" ng-model="selectedAccountType" ng-click="selectAccountType('Location Spotter')"></input>
+	</div>
+	<div class="control">
+		<label for="tipo_parceiro">Parceiro</label>
+		<input type="radio" name="tipo_account" value ="Parceiro"  id="tipo_parceiro" ng-model="selectedAccountType" ng-click="selectAccountType('Parceiro')"></input>
+	</div>
+	<div class="control">
+		<label for="tipo_outro">Outro</label>
+		<input type="radio" name="tipo_account" value ="Outros" id="tipo_outro" ng-model="selectedAccountType" ng-click="selectAccountType('Outros')"></input>
+	</div>
+</div>
+<div class="control">
+	<label for="account">Já existente:</label>
+	<select id="account" ng-model="location.account._id" ng-options="account._id as account.nome for account in accountsList">
+		<option value="0">Seleccionar</option>
+	</select>
+	<!--<a href="/users/novo?isajax=true&tipo=account" class="ink-button fancybox fancybox.ajax">Novo</a>-->
+</div>

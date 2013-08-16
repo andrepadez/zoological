@@ -1,0 +1,46 @@
+<h2>Utilizadores</h2>
+<a class="ink-button" href="#/users/new">Novo Utilizador</a>
+<table class="ink-table ink-bordered ink-zebra ink-hover">
+	<thead>
+		<tr>
+			<th><a ng-click="sort('tipo')">Tipo</a></th>
+			<th><a ng-click="sort('nome')">Nome</a></th>
+			<th><a ng-click="sort('email')">Email</a></th>
+			<th><a ng-click="sort('telemovel')">Telemovel</a></th>
+			<th><a ng-click="sort('locations')">Locations</a></th>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr>
+			<th>
+				<select ng-change="filter()" ng-model="search.tipo" ng-options="tipo.val as tipo.text for tipo in tiposUtilizador"></select>
+			</th>
+			<th><input type="text" ng-change="filter()" ng-model="search.nome"></th>
+			<th><input type="text" ng-change="filter()" ng-model="search.email"></th>
+			<th><input type="text" ng-change="filter()" ng-model="search.telemovel"></th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="user in users" id="tr-{{user._id}}">
+			<td>{{user.tipo}}</td>
+			<td>{{user.nome}}</td>
+			<td>{{user.email}}</td>
+			<td>{{user.telemovel}}</td>
+			<td>{{user.locations.length || 0}}</td>
+			<td><a href="#/users/{{user._id}}"><i class="icon-edit"></i></a></td>
+			<td><a ng-click="remove(user._id)"><i class="icon-remove-sign"></i></a></td>
+		</tr>
+		<tr class="buttons">
+			<td><button class="ink-button" ng-click="resetFilter()">... Sem Filtro ...</button></td>
+			<td><button class="ink-button" ng-click="more()">... mais ...</button></td>
+			<td></td>
+			<td></td>
+			<td><!--<button class="ink-button" ng-click="">... Up ...</button>--></td>
+			<td><!--<button class="ink-button" ng-click="">... topo ...</button>--></td>
+			<td><!--<button class="ink-button" ng-click="">... Down ...</button>--></td>
+		</tr>
+	</tbody>
+</table>

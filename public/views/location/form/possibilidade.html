@@ -1,0 +1,32 @@
+<h3>Possibilidade de Filmagens</h3>
+<div id="div-possibilidade" class="control-group">
+	<div class="control">
+		<label for="possibilidade_dia">Dia</label>
+		<input type="checkbox" id="possibilidade_dia" ng-model="location.possibilidade.dia">
+		<input ng-show="location.possibilidade.dia" type="text" ng-model="location.possibilidade.dia_obs">
+	</div>
+	<div class="control">
+		<label for="possibilidade_noite">Noite</label>
+		<input type="checkbox" id="possibilidade_noite" ng-model="location.possibilidade.noite">
+		<input ng-show="location.possibilidade.noite" type="text" ng-model="location.possibilidade.noite_obs">
+	</div>
+	<div class="control">
+		<label for="possibilidade_interior">Interior</label>
+		<input type="checkbox" id="possibilidade_interior" ng-model="location.possibilidade.interior">
+		<input ng-show="location.possibilidade.interior" type="text" ng-model="location.possibilidade.interior_obs">
+	</div>
+	<div class="control">
+		<label for="possibilidade_exterior">Exterior</label>
+		<input type="checkbox" id="possibilidade_exterior" ng-model="location.possibilidade.exterior">
+		<input ng-show="location.possibilidade.exterior" type="text" ng-model="location.possibilidade.exterior_obs">
+	</div>
+	<div class="control">
+		<label for="possibilidade_forfait">Forfait</label>
+		<input type="checkbox" id="possibilidade_forfait" ng-model="location.possibilidade.forfait">
+		<input ng-show="location.possibilidade.forfait" type="text" ng-model="location.possibilidade.forfait_obs">
+	</div>
+</div>
+<div class="control">
+	<label for="possibilidade_obs">Observações</label>
+	<textarea id="possibilidade_obs" name="possibilidade[obs]" ng-model="location.possibilidade.obs"></textarea>
+</div>

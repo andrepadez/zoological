@@ -1,0 +1,44 @@
+<h2>{{action}} Utilizador</h2>
+<form id="form-user" class="ink-form block">
+	<input type="hidden" name="_id" ng-model="user._id">
+	<div class="control">
+		<label for="user-tipo">Tipo de Utilizador</label>
+		<select id="user-tipo" ng-model="user.tipo" ng-options="tipo.val as tipo.text for tipo in tiposUtilizador"></select>
+	</div>
+	<div class="control">
+		<label for="user-nome">Nome</label>
+		<input type="text" id="user-nome" ng-model="user.nome" value="{{user.nome}}">
+	</div>
+	<div class="control">
+		<label for="user-email">Email</label>
+		<input type="text" id="user-email" ng-model="user.email" value="{{user.email}}">
+	</div>
+	<div class="control">
+		<label for="user-telemovel">Telemovel</label>
+		<input type="text" id="user-telemovel" ng-model="user.telemovel" value="{{user.telemovel}}">
+	</div>
+	<div class="control">
+		<label for="user-contacto2">Contacto2</label>
+		<input type="text" id="user-contacto2" ng-model="user.contacto2" value="{{user.contacto2}}">
+	</div>
+	<div class="control">
+		<label for="user-nif">NIF - Número de Contribuínte</label>
+		<input type="text" id="user-nif" ng-model="user.nif" value="{{user.nif}}">
+	</div>
+	<div class="control">
+		<label for="user-obs">Observações</label>
+		<textarea id="user-obs" ng-model="user.obs">{{user.obs}}</textarea>
+	</div>
+	<div class="control">
+		<input ng-click="save()" class="ink-button" type="submit" id="user-submit" name="submit" value="Gravar">
+	</div>
+</form>
+
+<script type="text/javascript">
+	$(function(){
+		$('.fancybox-inner').each(function(){
+			$(this).find('h1, nav').remove();
+			$(this).find('select#user-tipo').val('{{tipo}}');
+		});
+	});	
+</script>

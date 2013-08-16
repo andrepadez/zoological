@@ -1,0 +1,40 @@
+<style type="text/css">
+	
+</style>
+
+<h3>Location:</h3>
+<div class="control">
+	<label for="referencia">Referência</label>
+	<input type="hidden" ng-model="location.referencia">
+	<input type="text" value="{{location.referencia}}" disabled>
+</div>
+<div class="control">
+	<label for="data_levantamento">Data de Levantamento:</label>
+	<input class="date-picker" type="text" id="data_levantamento" ng-model="location.data_levantamento">
+</div>
+<div class="control">
+	<label for="titulo">Título</label>
+	<input type="text" id="titulo" ng-model="location.titulo">
+</div>
+<div class="control">
+	<label for="tipo">Tipo de Location</label>
+	<input type="text" id="tipo" ng-model="location.tipo">
+</div>
+<div class="control">
+	<label for="rating">Rating</label>
+	<select id="rating" ng-model="location.rating" ng-options="rating for rating in [5,4,3,2,1]"></select>
+</div>
+<div class="control">
+	<label for="ano_construcao">Ano de Construção</label>
+	<select id="ano_construcao" ng-model="location.ano_construcao" ng-options="ano for ano in optionsAnos">
+		
+	</select>
+</div>
+<div class="control">
+	<label for="sinopse">Sinopse</label>
+	<textarea name="sinopse" id="sinopse" ng-model="location.sinopse"></textarea>
+</div>
+
+<script type="text/javascript">
+	var picker = new SAPO.Ink.DatePicker('#data_levantamento');
+</script>

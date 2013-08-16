@@ -1,0 +1,51 @@
+.main-container {
+	position: relative;
+	height: {{h}}px;
+}
+
+.main-header {
+	background-color: #000;
+	width: 100%;
+	height: {{h * 0.10}}px;
+}
+
+.main-header h1{
+	position:relative;
+	padding: 5px 10px;
+	color: #fff;
+}
+
+.main-header h1 a {
+	position:absolute;
+	right: 10px;
+	bottom:0;
+	font-size: 0.6em;
+	color: #7569FF;
+}
+
+.content {
+	background-color: #cdcdcd;	
+	overflow-y: auto;
+	height: {{h * 0.80}}px;
+}
+
+.footer {
+	background-color: #000;
+	width: 100%;
+	height: {{h * 0.10}}px;
+}
+
+.footer li {
+	display:inline-block;
+	text-align: center;
+	margin: auto;
+	width:{{w * 0.32}}px;
+}
+.footer li button {
+	display: inline-block;
+	font-size: large;
+	font-weight: bold;
+	background: #000;
+	color:white;
+	border: none;
+}

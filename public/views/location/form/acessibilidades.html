@@ -1,0 +1,50 @@
+<h3>Acessibilidades:</h3>
+<div class="control">
+	<h4>Autoestrada mais próxima:</h4>
+	<label for="autoestrada-nome">Nome:</label>
+	<input type="text" id="autoestrada-nome" ng-model="location.acessibilidades.autoestrada.nome">
+	<label for="autoestrada-distancia">Distancia (Km):</label>
+	<input type="text" id="autoestrada-distancia" ng-model="location.acessibilidades.autoestrada.distancia">
+</div>
+<div class="control">
+	<h4>Hotel mais próximo:</h4>
+	<label for="hotel-nome">Nome:</label>
+	<input type="text" id="hotel-nome" ng-model="location.acessibilidades.hotel.nome">
+	<label for="hotel-distancia">Distancia (Km):</label>
+	<input type="text" id="hotel-distancia" ng-model="location.acessibilidades.hotel.distancia">
+	<label for="hotel-telefone">Telefone:</label>
+	<input type="text" id="hotel-telefone" ng-model="location.acessibilidades.hotel.telefone">
+	<label for="hotel-morada">Morada:</label>
+	<input type="text" id="hotel-morada" ng-model="location.acessibilidades.hotel.morada">
+</div>
+<div class="control">
+	<h4>Farmácia mais próxima:</h4>
+	<label for="farmacia-nome">Nome:</label>
+	<input type="text" id="farmacia-nome" ng-model="location.acessibilidades.farmacia.nome">
+	<label for="farmacia-distancia">Distancia (Km):</label>
+	<input type="text" id="farmacia-distancia" ng-model="location.acessibilidades.farmacia.distancia">
+	<label for="farmacia-telefone">Telefone:</label>
+	<input type="text" id="farmacia-telefone" ng-model="location.acessibilidades.farmacia.telefone">
+	<label for="farmacia-morada">Morada:</label>
+	<input type="text" id="farmacia-morada" ng-model="location.acessibilidades.farmacia.morada">
+</div>
+<div class="control">
+	<h4>Restaurante mais próximo:</h4>
+	<label for="restaurante-nome">Nome:</label>
+	<input type="text" id="restaurante-nome" ng-model="location.acessibilidades.restaurante.nome">
+	<label for="restaurante-distancia">Distancia (Km):</label>
+	<input type="text" id="restaurante-distancia" ng-model="location.acessibilidades.restaurante.distancia">
+	<label for="restaurante-telefone">Telefone:</label>
+	<input type="text" id="restaurante-telefone" ng-model="location.acessibilidades.restaurante.telefone">
+	<label for="restaurante-morada">Morada:</label>
+	<input type="text" id="restaurante-morada" ng-model="location.acessibilidades.restaurante.morada">
+</div>
+<hr>
+<div class="control">
+	<label for="existe-raio">O que existe num raio de 10Km:</label>
+	<textarea id="existe-raio" ng-model="location.acessibilidades.existe_raio"></textarea>
+</div>
+<div class="control">
+	<label for="itinerario">Itinerário:</label>
+	<textarea id="itinerario" ng-model="location.acessibilidades.itinerario"></textarea>
+</div>

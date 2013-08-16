@@ -1,0 +1,17 @@
+{
+  "name": "zoological",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.0.3",
+    "mongoose": "*",
+    "swig": "1.*",
+    "cssspitter": "*",
+    "normalizer": "*",
+    "passport": "*",
+    "passport-oauth": "*"
+  }
+}

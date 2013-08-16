@@ -1,0 +1,38 @@
+<h1>Location</h1>
+<form id="form-location" class="ink-form block">
+	<input type="hidden" ng-model="location._id">
+	<div class="form-tabs">		
+		<ul>
+			<li><a href="#tab-location">Location</a></li>
+			<li><a href="#tab-proprietario">Proprietario</a></li>
+			<li><a href="#tab-account">Account</a></li>
+			<li><a href="#tab-morada">Morada</a></li>
+			<li><a href="#tab-possibilidade">Possibilidade de Filmagem</a></li>
+			<li><a href="#tab-descricao">Descrição</a></li>
+			<li><a href="#tab-outros">Outros</a></li>
+			<li><a href="#tab-production-friendly">Comodidades</a></li>
+			<li><a href="#tab-acessibilidades">Acessibilidades</a></li>
+			<li><a href="#tab-imagens">Imagens</a></li>
+			<li><a href="#tab-gravar">Gravar</a></li>
+		</ul>
+		
+		<div id="tab-location" ng-include src="templates.location"></div>
+		<div id="tab-proprietario" ng-include src="templates.proprietario"></div>
+		<div id="tab-account" ng-include src="templates.account"></div>
+		<div id="tab-morada" ng-include src="templates.morada"></div>
+		<div id="tab-possibilidade" ng-include src="templates.possibilidade"></div>		
+		<div id="tab-descricao" ng-include src="templates.descricao"></div>
+		<div id="tab-outros" ng-include src="templates.outros"></div>
+		<div id="tab-production-friendly" ng-include src="templates.comodidades"></div>
+		<div id="tab-acessibilidades" ng-include src="templates.acessibilidades"></div>
+		<div id="tab-imagens" ng-include src="templates.imagens"></div>
+		<div id="tab-gravar" ng-include src="templates.gravar"></div>
+	</div>
+	
+</form>
+
+<script type="text/javascript">
+	$(function(){
+		$('.form-tabs').tabs();
+	});
+</script>

@@ -1,0 +1,7 @@
+<h3>Comodidades:</h3>
+<ul id="comodidades" class="control">
+	<li ng-repeat="comodidade in comodidadesList">
+		<label for="comodidades-{{comodidade._id}}">{{comodidade.nome}}</label>
+		<input type="checkbox" ng-model="location.comodidades[comodidade.nome]" id="comodidades-{{comodidade._id}}">
+	</li>
+</div>

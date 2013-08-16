@@ -1,0 +1,43 @@
+<h3>Descrição</h3>
+<div id="div-descricao">
+	<div class="control">
+		<label for="area_bruta">Área Bruta:</label>
+		<input type="text" id="area_bruta" ng-model="location.descricao.area_bruta">
+	</div>
+	<div class="control">
+		<label for="area_util">Área Útil:</label>
+		<input type="text" id="area_util" ng-model="location.descricao.area_util">
+	</div>
+	<div class="control">
+		<label for="remodelada">Remodelada:</label>
+		<input type="checkbox" id="remodelada" ng-model="location.descricao.remodelada">		
+		<select ng-show="location.descricao.remodelada" id="remodelada_ano" ng-model="location.descricao.remodelada_ano" ng-options="ano for ano in optionsAnos"></select>
+	</div>
+	<div class="control">
+		<label for="pe_direito">Pé Direito:</label>
+		<input type="text" id="pe_direito" ng-model="location.descricao.pe_direito">
+	</div>
+	<div class="control">
+		<label for="portas_facil_acesso">Portas de Fácil Acesso:</label>
+		<input type="checkbox" id="portas_facil_acesso" ng-model="location.descricao.portas_facil_acesso">
+	</div>
+	<div class="control">
+		<label for="utilizacao_electricidade">Utilização de Electricidade:</label>
+		<input type="checkbox" id="utilizacao_electricidade" ng-model="location.descricao.utilizacao_electricidade">
+		<input ng-show="location.descricao.utilizacao_electricidade" type="text" id="utilizacao_electricidade_obs" ng-model="location.descricao.utilizacao_electricidade_obs">
+	</div>
+	<div class="control">
+		<label for="utilizacao_agua">Utilização de Água:</label>
+		<input type="checkbox" id="utilizacao_agua" ng-model="location.descricao.utilizacao_agua">
+		<input ng-show="location.descricao.utilizacao_agua" type="text" ng-model="location.descricao.utilizacao_agua_obs">
+	</div>
+	<div class="control">
+		<label for="utilizacao_wc">Utilização de WC:</label>
+		<input type="checkbox" id="utilizacao_wc" ng-model="location.descricao.utilizacao_wc">
+		<input ng-show="location.descricao.utilizacao_wc" type="text" ng-model="location.descricao.utilizacao_wc_obs">
+	</div>
+</div>
+
+<script type="text/javascript">
+	
+</script>

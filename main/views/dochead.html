@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="Zoological">
+<head>
+    <!--<script src="http://192.168.2.101:8080/target/target-script-min.js#anonymous"></script>-->
+	<meta charset="UTF8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="HandheldFriendly" content="true" />
+	<title>{% block title %}Zoological{% endblock %}</title>
+    {% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    {% endblock %}
+    {% block scripts %}
+    <script type="text/javascript" src="/js/layout.js"></script>
+    <script type="text/javascript" src="/js/lib/angular.js"></script>
+    <script type="text/javascript" src="/js/lib/angular_resource.js"></script>
+    {% endblock %}
+
+	{% block angular %}
+	<script type="text/javascript" src="/app/controllers/zoological.js"></script>
+	{% endblock %}
+
+</head>
+<body>
+
+	<div class="container main-container">
+		{% block header %}{% endblock %}
+    	<div class="content" ng-view></div>
+        {% block footer %}{% endblock %}
+	</div>
+</body>
+</html>

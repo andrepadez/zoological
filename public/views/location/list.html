@@ -1,0 +1,28 @@
+<h2>Locations</h2>
+<a class="ink-button" href="#/locations/new">Nova Location</a>
+<table class="ink-table ink-bordered ink-zebra ink-hover">
+	<thead>
+		<tr>
+			<th><a ng-click="sort('tipo')">Referência</a></th>
+			<th><a ng-click="sort('titulo')">Título</a></th>
+			<th><a ng-click="sort('tipo')">Tipo</a></th>
+			<th><a ng-click="sort('cidade')">Cidade</a></th>
+			<th><a ng-click="sort('proprietario')">Proprietário</a></th>
+			<th><a ng-click="sort('account')">Account</a></th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="location in locations" id="tr-{{location.referencia}}">
+			<td>{{location.referencia}}</td>
+			<td>{{location.titulo}}</td>
+			<td>{{location.tipo}}</td>
+			<td>{{location.morada.cidade}}</td>
+			<td>{{location.proprietario.nome}}</td>
+			<td>{{location.account.nome}}</td>
+			<td><a href="#/locations/{{location.referencia}}"><i class="icon-edit"></i></a></td>
+			<td><a ng-click="remove(location.referencia)"><i class="icon-remove-sign"></i></a></td>
+		</tr>
+	</tbody>
+</table>

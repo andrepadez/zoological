@@ -1,0 +1,42 @@
+body.landscape {
+	height: {{w}};
+	overflow: hidden;
+}
+
+.landscape .home-menu ul {
+	margin-top: 3%;
+}
+
+.landscape .main-container {
+	height: {{w}}px;
+}
+
+.landscape .main-header {
+	height: {{w * 0.15}}px;
+}
+
+.landscape .content {
+	height: {{w * 0.70}}px;
+}
+
+.landscape .footer {
+	height: {{w * 0.15}}px;
+}
+
+.landscape .footer li {
+	width:{{h * 0.32}}px;
+}
+
+.landscape .home-menu li {
+	height: {{w * 0.80 * 0.35}}px;
+	width: 35%;
+}
+
+.landscape .home-menu li:nth-child(1), 
+.landscape .home-menu li:nth-child(2) {
+	margin-bottom: 4%;
+}
+
+.landscape .home-menu li button {
+	height: {{w * 0.80 * 0.35}}px;
+}

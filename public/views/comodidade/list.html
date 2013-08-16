@@ -1,0 +1,18 @@
+<h2>Comodidades:</h2>
+<form>
+	<input ng-model="novaComodidade" placeholder="Nova Comodidade">
+	<button type="submit" ng-click="create()">Criar</button>
+</form>	
+<div class="ink-container">
+	<sortable-comodidade>
+		<input type="hidden">
+		<ul id="comodidades">
+			<li id="{{comodidade._id}}" ng-repeat="comodidade in comodidades" editable-comodidade>
+				<i ng-click="editModeOn()" ng-hide="editMode" class="icon-edit"></i>
+				<span ng-hide="editMode">{{comodidade.nome}}</span>
+				<input ng-show="editMode" ng-model="comodidade.nome" type="text">
+				<i ng-hide="editMode" ng-click="remove(comodidade._id)" class="icon-remove-sign"></i>
+			</li>
+		</ul>
+	</sortable-comodidade>
+</div>
